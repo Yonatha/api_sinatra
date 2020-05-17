@@ -3,7 +3,7 @@ require 'sinatra/namespace'
 require 'sinatra/reloader'
 require 'mongoid'
 
-Mongoid.load! "./config/mongoid.config"
+Mongoid.load! "./config/database.config"
 
 set :port, 3001
 
