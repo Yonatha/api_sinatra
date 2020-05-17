@@ -1,0 +1,31 @@
+### LISTAR
+GET /api/v1/contatos HTTP/1.1
+Host: localhost:3001
+
+### CADASTRAR
+POST /api/v1/contatos HTTP/1.1
+Host: localhost:3001
+Content-Type: application/json
+
+{
+  "nome": "Yonatha",
+  "telefone": 839881510003
+}
+
+### EXIBIR
+GET /api/v1/contatos/5ec05c20e85faf52bce49aab HTTP/1.1
+Host: localhost:3001
+
+### CADASTRAR
+PATCH /api/v1/contatos HTTP/1.1
+Host: localhost:3001
+Content-Type: application/json
+
+{
+  "nome": "teste Almeida",
+  "telefone": 839881510003
+}
+
+### DELETAR
+DELETE /api/v1/contatos/5ec05c20e85faf52bce49aab HTTP/1.1
+Host: localhost:3001
